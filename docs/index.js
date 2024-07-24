@@ -5,13 +5,14 @@ imagenes = []
  * Agrego los puntitos que controlan el carrusel
  */
 let indicadoresDeCarrusel = document.getElementById('indicadores-de-carrusel')
+imagenAleatoria = Math.floor(Math.random() * numeroImagenes);
 for (let i=0;i<numeroImagenes;i++) {
   nuevoBoton = document.createElement("button");
   nuevoBoton["type"]='button';
   nuevoBoton.setAttribute("data-bs-target", '#myCarousel')
   nuevoBoton.setAttribute("data-bs-slide-to", i);
   nuevoBoton.setAttribute("aria-label", "Slide "+(i+1));
-  if (i==0) {
+  if (i==imagenAleatoria) {
     nuevoBoton.classList.add('active');
     nuevoBoton.setAttribute("aria-current", "true");
   }
@@ -25,7 +26,7 @@ let itemsDeCarrusel = document.getElementById('items-de-carrusel')
 for (let i=0;i<numeroImagenes;i++) {
   nuevoItem = document.createElement('div');
   nuevoItem.classList.add('carousel-item');
-  if (i==0) {
+  if (i==imagenAleatoria) {
     nuevoItem.classList.add('active');
   }
 
