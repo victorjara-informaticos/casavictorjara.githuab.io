@@ -1,4 +1,4 @@
-numeroImagenes = 25
+numeroImagenes = 32
 imagenes = []
 
 /**
@@ -33,7 +33,7 @@ for (let i=0;i<numeroImagenes;i++) {
   contenedorImagen.classList.add('d-flex');
   contenedorImagen.classList.add('justify-content-center');
   contenedorImagen.classList.add('align-items-center');
-  contenedorImagen.style.cssText = 'height: 300px; overflow: hidden;';
+  contenedorImagen.style.cssText = 'overflow: hidden;';
 
   imagen = document.createElement('img')
   imagen.classList.add('d-block')
