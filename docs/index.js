@@ -1,4 +1,4 @@
-numeroImagenes = 32
+numeroImagenes = 31
 imagenes = []
 
 /**
