@@ -2,7 +2,7 @@
   background-color: red;
 }
 .carousel-item img {
-  max-height: 80vh;
+  max-height: calc(100vh - 100px);
   width: auto;
   margin: 0 auto;
   display: block;
