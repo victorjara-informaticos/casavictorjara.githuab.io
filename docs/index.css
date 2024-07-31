@@ -2,7 +2,7 @@
   background-color: red;
 }
 .carousel-item img {
-  max-height: calc(100vh - 130px);
+  max-height: calc(100vh - 160px);
   width: auto;
   margin: 0 auto;
   display: block;
@@ -12,3 +12,18 @@
   justify-content: center;
   align-items: center;
 }
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+/* rtl:end:ignore */
