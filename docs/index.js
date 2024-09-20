@@ -1,11 +1,11 @@
-numeroImagenes = 31
+numeroImagenes = 32
 imagenes = []
 
 /**
  * Agrego los puntitos que controlan el carrusel
  */
 let indicadoresDeCarrusel = document.getElementById('indicadores-de-carrusel')
-imagenAleatoria = Math.floor(Math.random() * numeroImagenes);
+imagenAleatoria = numeroImagenes - 1; // Math.floor(Math.random() * numeroImagenes);
 for (let i=0;i<numeroImagenes;i++) {
   nuevoBoton = document.createElement("button");
   nuevoBoton["type"]='button';
